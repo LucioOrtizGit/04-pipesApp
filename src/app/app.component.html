@@ -1,0 +1,10 @@
+<h1>{{nombre| titlecase}}</h1>
+
+<button (click)="mostrarNombre()">Cambiar nombre</button>
+
+<h3>Async Pipe</h3>
+<pre>{{miObservable | async}}</pre>
+
+<h3>Promesa</h3>
+<pre *ngIf="!(valorPromesa | async)">Resolviendo promesa</pre>
+<pre>{{valorPromesa | async}}</pre>
